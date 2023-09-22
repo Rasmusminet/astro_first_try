@@ -3,6 +3,10 @@ import "../styles/style.css";
 import Card from "../components/Card.astro";
 import Nav from "../components/Nav.astro";
 import Button from "../components/Button.astro"; 
+import Library from "../components/Library.astro";
+import Page from "../components/page.astro";
+import { imageConfig } from "astro:assets";
+
 
 ---
 
@@ -17,22 +21,15 @@ import Button from "../components/Button.astro";
 	</head>
 	<body>
 		<Nav/>
-		<h1>Astro</h1>
+		
 		 <main>
+  <Library/>
+<Page/>
 			<Button variant="primary" size="small">TEXT</Button>
 			<Button variant="secondary" size="medium">TEXT</Button>
 			<Button variant="secondary" size="large">TEXT</Button>
 
 
-<!-- <Card header="hej verden">
-<img src="/g.png" alt="Et G">
-<button>klik her</button>
-</Card>
-
-<Card header="hej verden">
-	<button>klik her</button>
-<img src="/f.png" alt="Et F">
-</Card> -->
 		 </main>
 	</body>
 </html>
